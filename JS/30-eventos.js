@@ -1,0 +1,1 @@
+//los eventos son funciones que se ejecutan cuando el usuario hace algo

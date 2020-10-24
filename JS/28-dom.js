@@ -1,4 +1,5 @@
 //DOM - document object model
+//son todos los elementos html que se encuentran en una pagina web
 
 function cambiaColor(color){
     caja.style.background = color;
