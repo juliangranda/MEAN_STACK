@@ -109,8 +109,21 @@ $(document).ready(function () {
         });
     }
 
+    //acordeon
     if(window.location.href.indexOf('about') > -1){
         $("#acordeon").accordion();
+
+    }
+
+    //reloj
+    if(window.location.href.indexOf('reloj') > -1){
+
+        setInterval(function(){
+            var reloj = moment().format("h:mm:ss");
+            console.log(reloj);
+    
+            $("#reloj").html(reloj);
+        }, 1000);
 
     }
 
