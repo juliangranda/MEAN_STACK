@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto javascript</title>
 
+    <!-- hojas de estilos CSS-->
     <link rel="stylesheet" href="css/styles.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -27,6 +30,11 @@
 </head>
 
 <body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
     <section id="global">
 
         <header>
@@ -73,13 +81,13 @@
                     <h4><span>identificate</span></h4>
                     <form action="">
                         <label for="name">Nombre</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="form_name">
 
                         <label for="email">Email</label>
-                        <input type="text" name="email">
+                        <input type="text" name="email" id="form_email">
 
                         <label for="password">Contraseña</label>
-                        <input type="text" name="password">
+                        <input type="text" name="password" id="form_password">
 
                         <input type="submit" value="Entrar">
                     </form>
@@ -92,6 +100,8 @@
 
     <footer>
         master de javascript &copy;
+
+        <a href="#" class="subir">Ir arriba</a>
     </footer>
 </body>
 
