@@ -15,14 +15,11 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
 
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-    <!-- moment -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
     <!-- mis scripts de JS -->
     <script src="js/main.js"></script>
@@ -54,17 +51,32 @@
             </nav>
         </header>
 
-        <div id="slider">
-            <div class="galeria">
-                <div><img src="img/hojas.jpg" title="hojas"></div>
-                <div><img src="img/rojo.jpg" title="The long and winding road"></div>
-                <div><img src="img/cielo.jpg" title="Happy trees"></div>
-            </div>
-        </div>
 
         <section id="content">
-            <div id="posts">
-                <!-- cargar los articulos con objeto JSON-->
+            <div id="box">
+                <!-- cargar el acordeon-->
+                <h2>Sobre mi</h2>
+                <div id="acordeon">
+                    <h3>¿quienes somos?</h3>
+                    <div>
+                        <p>
+                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500
+                        </p>
+                    </div>
+
+                    <h3>nuestros servicios</h3>
+                    <div>
+                        <p>
+                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500
+                        </p>
+                    </div>
+                    <h3>nuestros clientes</h3>
+                    <div>
+                        <p>
+                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500
+                        </p>
+                    </div>
+                </div>
 
             </div>
             <aside id="sidebar">
@@ -75,6 +87,8 @@
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
                         ha sido el texto de relleno estándar de las industrias desde el año 1500
                     </p>
+
+                    
                 </div>
 
                 <div id="login">
