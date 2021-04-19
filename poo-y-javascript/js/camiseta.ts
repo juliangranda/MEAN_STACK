@@ -40,5 +40,25 @@ class Camiseta implements CamisetaBase{
 
 }
 
+//clase hija (herencia)
+class Sudadera extends Camiseta{
+    public capucha: boolean;
+
+    setCapucha(capucha){
+        this.capucha = capucha;
+    }
+    getCapucha(): boolean{
+        return this.capucha;
+    }
+}
+
+
+
 var camiseta = new Camiseta("fada","fafa","dfafa","fafa",12);
 console.log(camiseta);
+
+
+var sudadera_nike = new Sudadera("rojo","manga larga", "nike", "L", 12);
+sudadera_nike.setCapucha(true);
+sudadera_nike.setColor("morado");
+console.log(sudadera_nike);
