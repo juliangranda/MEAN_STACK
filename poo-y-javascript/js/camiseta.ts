@@ -1,3 +1,12 @@
+//interface: es un contrato donde definimos que propiedades y que metodos obligatorios va a tener dicha clase
+//si se rompe el contrato cambiandole el nombre o cualquier otro motivo generara error
+interface CamisetaBase{
+
+    setColor(color);
+    getColor();
+}
+
+
 //clase(molde del objeto)
 
 //propiedades(caracteristicas del objeto)
@@ -5,7 +14,7 @@
 //metodos(funciones o acciones que va a realizar el objeto)
 
 //la clase se debe llamar igual que el fichero para que se pueda utilizar
-class Camiseta{
+class Camiseta implements CamisetaBase{
     private color: string;
     private modelo: string;
     private marca: string;
@@ -31,9 +40,5 @@ class Camiseta{
 
 }
 
-var camiseta = new Camiseta("rojo","manga larga","nike","L",14);
+var camiseta = new Camiseta("fada","fafa","dfafa","fafa",12);
 console.log(camiseta);
-
-camiseta.setColor("Rojo");
-console.log(camiseta.getColor(),camiseta);
-
