@@ -12,6 +12,14 @@ class Camiseta{
     private talla: string;
     private precio: number;
 
+    //se usa para darle un valor por defecto a las propiedades de la  clase
+    constructor(color, modelo, marca, talla ,precio){
+        this.color = color;
+        this.modelo = modelo;
+        this.marca = marca;
+        this.talla = talla;
+        this.precio = precio;
+    }
 
     public setColor(color){
         this.color = color;
@@ -23,14 +31,9 @@ class Camiseta{
 
 }
 
-var camiseta = new Camiseta();
+var camiseta = new Camiseta("rojo","manga larga","nike","L",14);
 console.log(camiseta);
 
-camiseta.setColor("rojo");
+camiseta.setColor("Rojo");
 console.log(camiseta.getColor(),camiseta);
 
-//segundo objeto
-var playera = new Camiseta();
-console.log(playera);
-playera.setColor("azul");
-console.log(camiseta.getColor(),playera);
